@@ -1,0 +1,94 @@
+@import "../styles/colors";
+
+.container-home {
+  & h3 {
+    color: $black;
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    margin: 32px 42px 0 42px;
+  }
+  & p {
+    color: $black;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin: 16px 32px 27px 32px;
+  }
+  .container-card {
+    height: 160px;
+    width: 260px;
+    padding: 18px 25px 18px 18px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.15);
+    position: relative;
+    // z-index: -1;
+  }
+  .take-picture {
+    height: 48px;
+    width: 160px;
+    border-radius: 24px;
+    background-color: $purple;
+    box-shadow: 0 10px 20px -5px rgba(47, 0, 121, 0.3);
+    color: $white;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    right: 18%;
+    border: 0;
+  }
+  .card-fail {
+    width: 1000px;
+    height: 1000px;
+    .photo-home {
+      margin: -29px 0px 0px -22px;
+    }
+  }
+  .rejected-badge {
+    display: flex;
+    align-items: center;
+    margin: -17px 0px 0 210px;
+    justify-content: center;
+    height: 30px;
+    width: 102px;
+    border-radius: 4px;
+    background-color: #c00000;
+    position: absolute;
+
+    & label {
+      color: $white;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.75px;
+      line-height: 12px;
+    }
+  }
+  .accepted-badge {
+    display: flex;
+    align-items: center;
+    margin: -17px 0px 0 210px;
+    justify-content: center;
+    height: 30px;
+    width: 105px;
+    border-radius: 4px;
+    background-color: #69CC8B;
+    position: absolute;
+
+    & label {
+      color: $white;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.75px;
+      line-height: 12px;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import "../styles/colors";
+
+.container-scan {
+  width: 100%;
+  background-position: right;
+  background-size: cover;
+  height: 736px;
+  background-position: 550px;
+  background-size: cover;
+  & h3 {
+    color: $white;
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    padding: 100px 47px 0 47px;
+  }
+  & p {
+    color: $white;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin: 16px 32px 27px 32px;
+  }
+  .container-webcam {
+    margin: 0px 58px;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+  .container-message {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    & img {
+      margin: 0;
+    }
+    & p {
+      margin: 0;
+    }
+  }
+}
+.cancel-button-container {
+   
+  .button-cancel {
+    left: 41%;
+    border: 0;
+    background-color: transparent;
+    color: $white;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    margin-top: 200px;
+  }
+}
