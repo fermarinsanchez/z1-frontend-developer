@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import './Scan.scss'
-import Webcam from "react-webcam"
 import { Link, useHistory } from 'react-router-dom'
+import Webcam from "react-webcam"
 import { checkPhoto } from '../services/Api'
+import './Scan.scss'
 import backgroundImage from '../assets/andyone--WW8jBak7bo-unsplash.jpg'
 import lightIcon from '../assets/Fontawesome-Regular.svg'
 import okIcon from '../assets/Fontawesome-ok.svg'
@@ -16,8 +16,6 @@ const videoConstraints = {
     height: 200,
     facingMode: "user"
 };
-
-
 
 export default function Scan() {
 
@@ -40,12 +38,13 @@ export default function Scan() {
         finalPhoto: finalPhoto
     }
 
-    const webcamRef : any = React.useRef(null);
+    const webcamRef: any = React.useRef(null);
 
     const capture = React.useCallback(
         () => {
             const imageSrc = webcamRef.current.getScreenshot();
             setPhotos(imageSrc)
+
         },
         [webcamRef]
     );
@@ -110,9 +109,6 @@ export default function Scan() {
                     <button className='button-cancel'>CANCEL</button>
                 </Link>
             </div>
-
-
-
         </div>
     )
 }

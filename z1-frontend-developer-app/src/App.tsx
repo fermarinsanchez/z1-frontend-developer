@@ -1,8 +1,8 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom';
-import './App.css';
 import Home from './pages/Home';
 import Scan from './pages/Scan';
+import './App.css';
 
 function App() {
 
